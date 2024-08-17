@@ -3,14 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Universo</title>
   </head>
   <body>
     <head>
       <div id="header-content">
-        <div id="logo">
-          <a href="#">Logo</a>
+        <div>
+          <a href="#">
+            <img
+              id="logo"
+              src="assets/logonauta.png"
+              alt="Logo do unicórnio espacial"
+              width="60px"
+              height="60px"
+            />
+          </a>
         </div>
 
         <div id="menu">
@@ -26,38 +34,38 @@
     <main>
       <section id="home">
         <article id="home-text">
-          <h1>Bem vindo ao novo universo</h1>
-          <h3>Mundos diferentes para aliens diferentes</h3>
-
+          <h3>Bem vindo ao Novo universo</h3>
+          <h1>Mundos diferentes para aliens diferentes</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non quam
-            tristique, volutpat mauris nec, posuere nulla. Curabitur sed urna
-            sed mauris faucibus interdum. Vivamus.
+            tristique.
           </p>
 
-          <div id="about">
+          <div id="button-github">
             <a
-              href="https://github.com/sam-grs/universe_frontend"
+              href="https://github.com/sam-grs/app-frontend"
               alt="Link para o Github"
-              >Explorar</a
+              ><button>Explorar</button></a
             >
           </div>
         </article>
 
-        <article id="home-imagem">
+        <article id="home-image">
           <img
             src="./assets/astronauta.svg"
             alt="Capacete de astronauta animado"
-            width="250px"
+            width="300px"
           />
         </article>
       </section>
 
       <section id="about">
         <img
-          src="assets/user_01.svg"
+          id="avatar"
+          src="assets/profile.jpeg"
           alt="Foto do Perfil do Github"
           width="250px"
+          height="300px"
         />
 
         <article id="about-text">
@@ -70,80 +78,52 @@
             deleniti modi sit laudantium totam!
           </p>
 
-          <div id="about-github">
-            <a
-              target="_blank"
-              href="https://github.com/sam-grs/universe_frontend"
-              >Github</a
-            >
-            <p>5 Seguidores</p>
-            <p>5 Repositórios</p>
+          <div id="social-network-icons">
+            <a href="https://www.linkedin.com/in/samira-grossi/">
+              <img src="assets/linkedin.svg" alt="LinkedIn" width="50px" />
+            </a>
+
+            <a href="https://github.com/sam-grs?tab=repositories">
+              <img src="assets/github.svg" alt="Github" width="50px" />
+            </a>
+
+            <!-- EMAIL? -->
+            <a href="">
+              <img src="assets/instagram.svg" alt="Instagram" width="50px" />
+            </a>
           </div>
         </article>
       </section>
 
       <section id="contact">
-        <article id="social-network">
-          <h4>Contate-me</h4>
+        <article id="contact-description">
+          <h1>Contate-me</h1>
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error
             veniam in voluptatem magni quisquam
           </p>
-
-          <div id="social-network-icons">
-            <a href="https://www.linkedin.com/in/samira-grossi/">
-              <img src="assets/linkedin.svg" alt="LinkedIn" />
-            </a>
-
-            <a href="https://github.com/sam-grs?tab=repositories">
-              <img src="assets/github.svg" alt="Github" />
-            </a>
-
-            <!-- EMAIL? -->
-            <a href="">
-              <img src="assets/instagram.svg" alt="Instagram" />
-            </a>
-          </div>
         </article>
 
-        <form action="" method="POST">
-          <label for="name"> Nome: </label>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Digite seu nome:"
-          />
-          <span id="input-name"></span>
+        <div id="form">
+          <form action="" method="POST">
+            <input type="text" name="name" placeholder="Seu nome:" />
 
-          <label for="email"> E-mail: </label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Digite seu email:"
-          />
-          <span id="input-email"></span>
+            <input type="email" name="email" placeholder="Seu email:" />
 
-          <label for="subject"> Assunto: </label>
-          <input
-            id="subject"
-            type="text"
-            name="subject"
-            placeholder="Digite o título da mensagem:"
-          />
-          <span id="input-subject"></span>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Título da mensagem:"
+            />
 
-          <label for="message"> Mensagem: </label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Digite sua messagem"
-          ></textarea>
-
-          <button type="submit">Enviar</button>
-        </form>
+            <textarea
+              name="message"
+              placeholder="Digite sua messagem:"
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
       </section>
     </main>
 
