@@ -22,35 +22,36 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-    background: var(--pink);
+.content {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%; 
+    position: relative;
+    box-sizing: border-box;
+    margin: auto;
 }
 
-#header-content {
-    display: flex;
-    position: fixed;
+#header-content{
     width: 100%;
     height: 100px;
-    justify-content: space-between;
-    align-items: center;
+    box-sizing: border-box;
     background-color: var(--navy);
     padding: 0 50px;
+    
+    position: fixed; 
     z-index: 1;
-    top: 0px;
-    box-sizing: border-box;
+    top: 0px; 
 }
+
+#header-content .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
 
 #logo {
     border-radius: 50%;
-}
-
-main {
-    box-sizing: border-box;
-    position: relative;
-    max-width: 1440px;
-    width: 100%;
-    height: 100%;
-    /* padding: 0px 50px; */
 }
 
 ul{
@@ -72,6 +73,10 @@ a {
 
 a:hover {
     color: var(--animation-color);
+}
+
+main {
+    background: var(--pink);
 }
 
 h1 {
@@ -116,6 +121,7 @@ button:active {
 }
 
 #home {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,13 +142,16 @@ button:active {
 }
 
 #about {
+    background-color: var(--purple);
+    width: 100% ;
+    height: 90vh;
+}
+
+#about .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     gap: 3rem;
-    height: 90vh;
-    background-color: var(--purple);
 }
 
 #avatar {

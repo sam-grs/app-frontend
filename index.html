@@ -7,9 +7,11 @@
     <title>Universo</title>
   </head>
   <body>
+    <!-- Fazer a homepage responsiva -->
+    <!-- por que nao deu pra estilizar o head? -->
     <head>
       <div id="header-content">
-        <div>
+        <div class="content">
           <a href="#">
             <img
               id="logo"
@@ -19,20 +21,20 @@
               height="60px"
             />
           </a>
-        </div>
 
-        <div id="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li><a href="contact.html">Contato</a></li>
-          </ul>
+          <nav id="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </head>
 
     <main>
-      <section id="home">
+      <section id="home" class="content">
         <article id="home-text">
           <h3>Bem vindo ao Novo universo</h3>
           <h1>Mundos diferentes para aliens diferentes</h1>
@@ -60,42 +62,45 @@
       </section>
 
       <section id="about">
-        <img
-          id="avatar"
-          src="assets/profile.jpeg"
-          alt="Foto do Perfil do Github"
-          width="250px"
-          height="300px"
-        />
+        <div class="content">
+          <img
+            id="avatar"
+            src="assets/profile.jpeg"
+            alt="Foto do Perfil do Github"
+            width="250px"
+            height="300px"
+          />
 
-        <article id="about-text">
-          <h1>Sobre mim</h1>
+          <article id="about-text">
+            <h1>Sobre mim</h1>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
-            odit voluptates incidunt inventore rem error harum blanditiis
-            accusamus vitae, minus fugit consequatur? Dolorum maiores magni
-            deleniti modi sit laudantium totam!
-          </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam odit voluptates incidunt inventore rem error harum
+              blanditiis accusamus vitae, minus fugit consequatur? Dolorum
+              maiores magni deleniti modi sit laudantium totam!
+            </p>
 
-          <div id="social-network-icons">
-            <a href="https://www.linkedin.com/in/samira-grossi/">
-              <img src="assets/linkedin.svg" alt="LinkedIn" width="50px" />
-            </a>
+            <!-- Trocar os ícones -->
+            <div id="social-network-icons">
+              <a href="https://www.linkedin.com/in/samira-grossi/">
+                <img src="assets/linkedin.svg" alt="LinkedIn" width="50px" />
+              </a>
 
-            <a href="https://github.com/sam-grs?tab=repositories">
-              <img src="assets/github.svg" alt="Github" width="50px" />
-            </a>
+              <a href="https://github.com/sam-grs?tab=repositories">
+                <img src="assets/github.svg" alt="Github" width="50px" />
+              </a>
 
-            <!-- EMAIL? -->
-            <a href="">
-              <img src="assets/instagram.svg" alt="Instagram" width="50px" />
-            </a>
-          </div>
-        </article>
+              <!-- EMAIL? -->
+              <a href="">
+                <img src="assets/instagram.svg" alt="Instagram" width="50px" />
+              </a>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="content">
         <article id="contact-description">
           <h1>Contate-me</h1>
 
@@ -105,25 +110,19 @@
           </p>
         </article>
 
-        <div id="form">
-          <form action="" method="POST">
-            <input type="text" name="name" placeholder="Seu nome:" />
+        <form id="form" action="" method="POST">
+          <input type="text" name="name" placeholder="Seu nome:" />
 
-            <input type="email" name="email" placeholder="Seu email:" />
+          <input type="email" name="email" placeholder="Seu email:" />
 
-            <input
-              type="text"
-              name="subject"
-              placeholder="Título da mensagem:"
-            />
+          <input type="text" name="subject" placeholder="Título da mensagem:" />
 
-            <textarea
-              name="message"
-              placeholder="Digite sua messagem:"
-            ></textarea>
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
+          <textarea
+            name="message"
+            placeholder="Digite sua messagem:"
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
       </section>
     </main>
 
