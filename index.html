@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/general-settings.css" />
     <title>Galactka</title>
   </head>
   <body>
     <!-- Fazer a homepage responsiva -->
     <!-- por que nao deu pra estilizar o head? -->
-    <header id="header-content">
+    <header>
       <div class="content">
         <a href="#">
           <img
@@ -32,42 +33,44 @@
     </header>
 
     <main>
-      <section id="home" class="content">
-        <article id="home-text">
-          <h3>Bem vindo ao Novo universo</h3>
-          <h1>Mundos diferentes para aliens diferentes</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non quam
-            tristique.
-          </p>
+      <section id="home">
+        <div class="content">
+          <article id="home-text">
+            <h3>Bem vindo ao Novo universo</h3>
+            <h1>Mundos diferentes para aliens diferentes</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
+              quam tristique.
+            </p>
 
-          <div id="button-github">
-            <a
-              href="https://github.com/sam-grs/app-frontend"
-              alt="Link para o Github"
-              ><button>Explorar</button></a
-            >
-          </div>
-        </article>
+            <div id="button-github">
+              <a
+                href="https://github.com/sam-grs/app-frontend"
+                alt="Link para o Github"
+                ><button>Explorar</button></a
+              >
+            </div>
+          </article>
 
-        <article id="home-image">
-          <img
-            src="./assets/astronauta.svg"
-            alt="Capacete de astronauta animado"
-            width="300px"
-          />
-        </article>
+          <article id="home-image">
+            <img
+              src="./assets/astronauta.svg"
+              alt="Capacete de astronauta animado"
+            />
+          </article>
+        </div>
       </section>
 
       <section id="about">
         <div class="content">
-          <img
-            id="avatar"
-            src="assets/profile.jpeg"
-            alt="Foto do Perfil do Github"
-            width="250px"
-            height="300px"
-          />
+          <article id="about-image">
+            <img
+              id="avatar"
+              src="assets/profile.jpeg"
+              alt="Foto do Perfil do Github"
+              width="50%"
+            />
+          </article>
 
           <article id="about-text">
             <h1>Sobre mim</h1>
@@ -98,29 +101,35 @@
         </div>
       </section>
 
-      <section id="contact" class="content">
-        <article id="contact-description">
-          <h1>Contate-me</h1>
+      <section id="contact">
+        <div class="content">
+          <article id="contact-description">
+            <h1>Contate-me</h1>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error
-            veniam in voluptatem magni quisquam
-          </p>
-        </article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              error veniam in voluptatem magni quisquam
+            </p>
+          </article>
 
-        <form id="form" action="" method="POST">
-          <input type="text" name="name" placeholder="Seu nome:" />
+          <form action="" method="POST">
+            <input type="text" name="name" placeholder="Seu nome:" />
 
-          <input type="email" name="email" placeholder="Seu email:" />
+            <input type="email" name="email" placeholder="Seu email:" />
 
-          <input type="text" name="subject" placeholder="Título da mensagem:" />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Título da mensagem:"
+            />
 
-          <textarea
-            name="message"
-            placeholder="Digite sua messagem:"
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+            <textarea
+              name="message"
+              placeholder="Digite sua messagem:"
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
       </section>
     </main>
 
