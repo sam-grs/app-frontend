@@ -7,11 +7,25 @@
   h3 {
     font-size: 20px;
   }
+
+  .content {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 470px) {
+  #logo {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
   h1 {
     font-size: 25px;
+  }
+
+  .content {
+    padding: 0 50px;
   }
 }
 
@@ -54,7 +68,6 @@ html {
   position: relative;
   box-sizing: border-box;
   margin: auto;
-  padding: 0 50px;
 }
 
 header {
@@ -62,7 +75,6 @@ header {
   height: 100px;
   box-sizing: border-box;
   background-color: var(--navy);
-  padding: 0 50px;
   position: fixed;
   z-index: 1;
   top: 0px;
