@@ -1,7 +1,22 @@
-# Bem vindo ao meu Blog!
+# Bem vinde!
 
-## Acesse o site
+## Acesse o meu site:
 https://galactka.vercel.app/
 
-## Como ficou a home page
-![screen](https://github.com/user-attachments/assets/bec1ba12-42b7-4974-afb6-f3715f591af8)
+## Tecnologias utilizadas 
+- HTML
+- CSS
+- JAVASCRIPT
+
+## O que foi feito?
+- Fiz duas páginas a Home e Success
+- Ajustei o design e a tipografia do site
+- Criei seções na página Home com um formulário
+- Criei o redirecionamento da página de Success após o usuário enviar o formulário
+- Usei Grid e Media Queries para fazer a tela adaptativa a diferentes tipos de dispositivos
+- Usei a API do GitHub para integrar as informações no Sobre mim
+- Para poder enviar mensagem diretamente para o meu email usei https://formsubmit.co/
+- Criei o Deploy com a Vercel em conjunto com Github Pages usando Jekyll
+
+
+
