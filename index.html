@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/general-settings.css" />
     <title>Galactka</title>
   </head>
   <body>
     <!-- Fazer a homepage responsiva -->
     <!-- por que nao deu pra estilizar o head? -->
-    <header id="header-content">
+    <header>
       <div class="content">
         <a href="#">
           <img
@@ -32,100 +33,98 @@
     </header>
 
     <main>
-      <section id="home" class="content">
-        <article id="home-text">
-          <h3>Bem vindo ao Novo universo</h3>
-          <h1>Mundos diferentes para aliens diferentes</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non quam
-            tristique.
-          </p>
-
-          <div id="button-github">
-            <a
-              href="https://github.com/sam-grs/app-frontend"
-              alt="Link para o Github"
-              ><button>Explorar</button></a
-            >
-          </div>
-        </article>
-
-        <article id="home-image">
-          <img
-            src="./assets/astronauta.svg"
-            alt="Capacete de astronauta animado"
-            width="300px"
-          />
-        </article>
-      </section>
-
-      <section id="about">
+      <section id="home">
         <div class="content">
-          <img
-            id="avatar"
-            src="assets/profile.jpeg"
-            alt="Foto do Perfil do Github"
-            width="250px"
-            height="300px"
-          />
-
-          <article id="about-text">
-            <h1>Sobre mim</h1>
-
+          <article id="home-text">
+            <h3>Bem vindo ao Novo universo</h3>
+            <h1>Mundos diferentes para aliens diferentes</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Quibusdam odit voluptates incidunt inventore rem error harum
-              blanditiis accusamus vitae, minus fugit consequatur? Dolorum
-              maiores magni deleniti modi sit laudantium totam!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non
+              quam tristique.
             </p>
 
-            <!-- Trocar os ícones -->
-            <div id="social-network-icons">
-              <a href="https://www.linkedin.com/in/samira-grossi/">
-                <img src="assets/linkedin.svg" alt="LinkedIn" width="50px" />
-              </a>
-
-              <a href="https://github.com/sam-grs?tab=repositories">
-                <img src="assets/github.svg" alt="Github" width="50px" />
-              </a>
-
-              <!-- EMAIL? -->
-              <a href="">
-                <img src="assets/instagram.svg" alt="Instagram" width="50px" />
-              </a>
+            <div id="button-github">
+              <a
+                href="https://github.com/sam-grs/app-frontend"
+                alt="Link para o Github"
+                ><button>Explorar</button></a
+              >
             </div>
+          </article>
+
+          <article id="home-image">
+            <img
+              src="./assets/astronauta.svg"
+              alt="Capacete de astronauta animado"
+            />
           </article>
         </div>
       </section>
 
-      <section id="contact" class="content">
-        <article id="contact-description">
-          <h1>Contate-me</h1>
+      <section id="about"></section>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error
-            veniam in voluptatem magni quisquam
-          </p>
-        </article>
+      <section id="contact">
+        <div class="content">
+          <article id="contact-description">
+            <h1>Contate-me</h1>
 
-        <form id="form" action="" method="POST">
-          <input type="text" name="name" placeholder="Seu nome:" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              error veniam in voluptatem magni quisquam
+            </p>
+          </article>
 
-          <input type="email" name="email" placeholder="Seu email:" />
+          <form
+            action="https://formsubmit.co/bf92202a2b1c737eec98ca8143c7be9e"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://galactka.vercel.app/success.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
 
-          <input type="text" name="subject" placeholder="Título da mensagem:" />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Seu nome:"
+              required
+            />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Seu email:"
+              required
+            />
 
-          <textarea
-            name="message"
-            placeholder="Digite sua messagem:"
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+            <input
+              id="subject"
+              type="text"
+              name="subject"
+              placeholder="Título da mensagem:"
+              required
+            />
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Digite sua messagem:"
+              required
+            ></textarea>
+
+            <button id="submit" type="submit">Enviar</button>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer>
       <p>Feito por Samira Grossi - 2024</p>
     </footer>
+
+    <script src="./assets/js/home.js"></script>
   </body>
 </html>
