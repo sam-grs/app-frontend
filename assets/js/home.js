@@ -12,8 +12,8 @@ async function getApiGithub() {
               id="avatar"
               src="./assets/profile.jpeg"
               alt="Foto do Perfil - ${profile.name}"
-              width="200px"
-              height="250px"
+              width="250px"
+              height="300px"
             />
           </article>
 
@@ -21,10 +21,10 @@ async function getApiGithub() {
             <h1>Sobre mim</h1>
 
             <p id='text'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Quibusdam odit voluptates incidunt inventore rem error harum
-              blanditiis accusamus vitae, minus fugit consequatur? Dolorum
-              maiores magni deleniti modi sit laudantium totam!
+              Olá, prazer me chamo Samira Grossi, comecei aos 15 anos em Programação na ETEC. 
+              Desde então não parei, trabalhei por 2 anos numa empresa Startup, onde desenvolvi a aplicação do zero
+              até o projeto final. Hoje faço bacharelado em Sistemas de Informação e o Bootcamp 
+              Intensivo da Generation FullStack JavaScript. Se quiser me conhecer mais, acesse minhas redes:
             </p>
             
             <div id="repo">
@@ -34,17 +34,12 @@ async function getApiGithub() {
 
             <!-- Trocar os ícones -->
             <div id="social-network-icons">
-              <a href="https://www.linkedin.com/in/samira-grossi/" >
-                <img src="assets/linkedin.svg" alt="LinkedIn" width="50px" />
-              </a>
-
               <a href="${profile.html_url}">
                 <img src="assets/github.svg" alt="Github" width="50px" />
               </a>
 
-              <!-- EMAIL? -->
-              <a href="">
-                <img src="assets/instagram.svg" alt="Instagram" width="50px" />
+              <a href="https://www.linkedin.com/in/samira-grossi/" >
+                <img src="assets/linkedin.svg" alt="LinkedIn" width="50px" />
               </a>
             </div>
 
