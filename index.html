@@ -61,45 +61,7 @@
         </div>
       </section>
 
-      <section id="about">
-        <div class="content">
-          <article id="about-image">
-            <img
-              id="avatar"
-              src="assets/profile.jpeg"
-              alt="Foto do Perfil do Github"
-              width="50%"
-            />
-          </article>
-
-          <article id="about-text">
-            <h1>Sobre mim</h1>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Quibusdam odit voluptates incidunt inventore rem error harum
-              blanditiis accusamus vitae, minus fugit consequatur? Dolorum
-              maiores magni deleniti modi sit laudantium totam!
-            </p>
-
-            <!-- Trocar os ícones -->
-            <div id="social-network-icons">
-              <a href="https://www.linkedin.com/in/samira-grossi/">
-                <img src="assets/linkedin.svg" alt="LinkedIn" width="50px" />
-              </a>
-
-              <a href="https://github.com/sam-grs?tab=repositories">
-                <img src="assets/github.svg" alt="Github" width="50px" />
-              </a>
-
-              <!-- EMAIL? -->
-              <a href="">
-                <img src="assets/instagram.svg" alt="Instagram" width="50px" />
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
+      <section id="about"></section>
 
       <section id="contact">
         <div class="content">
@@ -112,22 +74,48 @@
             </p>
           </article>
 
-          <form action="" method="POST">
-            <input type="text" name="name" placeholder="Seu nome:" />
-
-            <input type="email" name="email" placeholder="Seu email:" />
+          <form
+            action="https://formsubmit.co/bf92202a2b1c737eec98ca8143c7be9e"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="http://localhost:5500/sucess.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
 
             <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Seu nome:"
+              required
+            />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Seu email:"
+              required
+            />
+
+            <input
+              id="subject"
               type="text"
               name="subject"
               placeholder="Título da mensagem:"
+              required
             />
 
             <textarea
+              id="message"
               name="message"
               placeholder="Digite sua messagem:"
+              required
             ></textarea>
-            <button type="submit">Enviar</button>
+
+            <button id="submit" type="submit">Enviar</button>
           </form>
         </div>
       </section>
@@ -136,5 +124,7 @@
     <footer>
       <p>Feito por Samira Grossi - 2024</p>
     </footer>
+
+    <script src="./assets/js/home.js"></script>
   </body>
 </html>
