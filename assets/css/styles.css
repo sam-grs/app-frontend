@@ -41,7 +41,7 @@
   }
 
   #about .content {
-    grid-template-columns: 50% auto;
+    grid-template-columns: repeat(2, auto);
     gap: 3rem;
   }
 
